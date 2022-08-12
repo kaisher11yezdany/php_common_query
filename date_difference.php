@@ -1,13 +1,6 @@
 <?php
-
-$datetime1 = new DateTime("2010-06-20");
-
-$datetime2 = new DateTime("2011-06-22");
-
-$difference = $datetime1->diff($datetime2);
-
-echo 'Difference: '.$difference->d.' days';
-
- 
-
+$date1=date_create("2013-03-15");
+$date2=date_create("2013-12-12");
+$diff=date_diff($date1,$date2);
+echo $diff->format("%R%a days");
 ?>
